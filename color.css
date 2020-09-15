@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    background-color: black;
+}
+header{
+    background-color: #e6d8e6;
+    color: #000;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    background-size: 2rem;
+}
+
+
+.new-note{
+    width: 280px;
+    margin: 5rem auto;
+    border: ivory;
+}
+
+.new-note input,
+.new-note textarea,
+.new-note button{
+    font-family: Arial;
+    padding: 5px 10px;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: rgb(194, 224, 198);
+    border: 2rem rgb(236, 240, 207);
+}
+.notes {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.note {
+    background-color: rgb(231, 176, 176);
+    -webkit-animation: random 5s infinite ;
+    animation: random 5s infinite;
+    color: black;
+    width: 300px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    min-height: 150px;
+    box-shadow: 10px lemonchiffon;
+}
+@keyframes random {
+    15% { background-color: rgb(231, 176, 176); }
+    25% {background-color:  #e7609f;}
+    35% {background-color: #ffb6c1; }
+    45% {background-color: #ff69b4; }
+    55% {background-color: #ff1493; }
+    65% {background-color: #db7093; }
+    75% {background-color: #c71585; }
+    85% {background-color: rgb(182, 74, 173); }
+    95% {background-color: rgb(236, 49, 112); }
+    
+}
+
+.note .title{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.note .title a {
+    color: black;
+    font-family: cirqua;
+    font-size: 20px;
+}
+
+.note .link a{
+   size: 50px;
+   float: right;
+   top: 80px;
+   color: rgb(47, 108, 199);
+   margin-top: 58px;
+   background-color: moccasin;
+   border: 2rem black;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+
+}
+.note .close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+}
+.note small {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin-top: 10px;
+    display: block;
+    text-align: right;
+    font-style: italic;
+}
+
+.checkl {
+  color: #e6d8e6;
+  display:inline-block ;
+  position: relative;
+ padding: 3px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+.checkl input{
+   cursor: pointer;
+   margin: 10px;
+   top: 5px;
+
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 25px;
+    
+}
+  
+
+
+
+
+  
